@@ -1,2 +1,2 @@
 # webprojects
-Mini projects built with HTML5, CSS &amp; JavaScript (jQuery)
+Mini projects built with HTML5, CSS3 &amp; JavaScript (jQuery)
