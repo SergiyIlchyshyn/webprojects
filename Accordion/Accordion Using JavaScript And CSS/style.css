@@ -1,0 +1,48 @@
+html {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper {
+    margin: 50px auto;
+    font-weight: 400;
+    text-align: center;
+}
+h1 {
+    font-weight: lighter;
+    font-size: 60px;
+}
+button.accordion {
+    width: 70%;
+    padding: 18px;
+    background-color: #dd1c1a;
+    color: #fff;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .4s;
+}
+button:focus {
+    outline: none;
+}
+button.accordion.active,
+button.accordion:hover {
+    background-color: #9b0a07;
+}
+.panel {
+    margin: 0 auto;
+    padding: 0 18px;
+    color: #000;
+    max-height: 0;
+    overflow: hidden;
+    width: 67.75%;
+    transition: max-height .2s ease-out;
+}

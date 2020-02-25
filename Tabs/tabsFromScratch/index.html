@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs in HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tabs">
+        <div class="tabs_navigations">
+            <button onclick="changeTab('first')">First item</button>
+            <button onclick="changeTab('second')">Second item</button>
+            <button onclick="changeTab('third')">Third item</button>
+        </div>
+        <div class="tabs_content">
+            <div id="first" class="single-tab">
+                <h2>This is the First tab</h2>
+                <p>lorem ipsum</p>
+            </div>
+            <div id="second" class="single-tab">
+                <h2>This is the Second tab</h2>
+                <p>lorem ipsum</p>
+            </div>
+            <div id="third" class="single-tab">
+                <h2>This is the Third tab</h2>
+                <p>lorem ipsum</p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
