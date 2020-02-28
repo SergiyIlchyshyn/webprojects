@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+a {
+	text-decoration: none;
+}
+/* --- Start Navigation */
+/*----- Toggle Button -----*/
+.menu-btn {
+    display:none;
+}
+
+nav {
+    width: 100%;
+    background-color: #16a085;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: .8em;
+    border-right: 1px solid #34495e;
+    font-size: .9em;
+    display: block;
+    transition: all 0.4s;
+}
+nav ul li a:hover {
+    background: #138a72;
+}
+nav ul li:last-of-type a {
+    border-right: 0px;
+}
+/* --- Media --- */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .menu {
+        display: none;
+    }
+    .menu-btn {
+        width: 100vw;
+        padding: 0 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menu-btn .menu-span {
+        display: block;
+    }
+
+    ul.menu-active {
+        display: block;
+        width: 100%;
+        margin-top: 5px;
+    }
+    ul.menu-active li {
+        border-bottom: 1px solid #ccc;
+    }
+    ul.menu-active li a {
+        border-right: 0;
+        padding: .5em;
+    }
+
+    /* --- Menu button --- */
+    .toggle-nav {
+        display: block;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+        position: relative;
+    }
+    .toggle-nav span {
+        display: block;
+        height: 2px;
+        width: 18px;
+        position: absolute;
+        left: 50%;
+        margin-left: -9px;
+        top: 50%;
+        margin-top: -1px;
+        background-color: #fff;
+    }
+    .toggle-nav span:before {
+        content: "";
+        display: block;
+        margin-top: -6px;
+        height: 2px;
+        width: 18px;
+        background-color: #fff;
+        transition: all 0.2s;
+    }
+    .toggle-nav span:after {
+        content: "";
+        display: block;
+        margin-top: 10px;
+        height: 2px;
+        width: 18px;
+        background-color: #fff;
+        transition: all 0.2s;
+    }
+    a.active span {
+        background-color: transparent;
+    }
+    a.active span:before {
+        transform: rotate(135deg);
+        margin-top: 0;
+    }
+    a.active span:after {
+        transform: rotate(-135deg);
+        margin-top: -2px;
+    }
+
+}
+/* --- End Navigation  --- */

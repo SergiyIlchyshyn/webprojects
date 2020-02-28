@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Quicksand;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/bg01.jpg") no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.content {
+    width: 90%;
+    margin: 4em auto;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 16px 36px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 24px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    list-style: none;
+    /* background-color: #ffffff; */
+    overflow: hidden;
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+nav.black ul {
+    background-color: #000000;
+}
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.menu-icon {
+    width: 100%;
+    background-color: #000000;
+    text-align: right;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #ffffff;
+    display: none;
+}
+
+@media (max-width: 580px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+    nav ul {
+        max-height: 0;
+        background-color: #000000;
+    }
+    nav.black ul {
+        background-color: #000000;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
