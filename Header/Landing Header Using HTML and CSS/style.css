@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* =========================================
+    Heder Navigations
+===========================================*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* mobile viewport bug fix */
+    min-height: -webkit-fill-available;
+    background-image: linear-gradient(to right bottom, rgba(76, 216, 255, .5), rgba(30, 108, 217, .5)), url('img/header.jpeg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0% 100%);
+}
+
+nav.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.navbar h2 {
+    padding: 15px 20px;
+    text-transform: uppercase;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    border: 2px solid transparent;
+    transition: 0.9s ease;
+}
+
+.navbar ul li:hover {
+    border-bottom: 2px solid;
+}
+
+.navbar ul a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+    Heder Text
+===========================================*/
+
+.header-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.heading-primary {
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #777;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
