@@ -1,0 +1,1 @@
+const triggerMenu = document.querySelector('nenu-trigger');
