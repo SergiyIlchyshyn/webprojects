@@ -42,7 +42,35 @@ h2 {
 }
 
 .home-content h2 {
-    margin-top: -150px;
+    margin-top: 150px;
     color: #fff;
     margin-left: 15px;
+}
+
+#scene {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -10px;
+    z-index: 100;
+}
+
+#scene .l1 {
+    margin-left: -399px;
+}
+
+#scene .l2 {
+    margin-top: 100px
+}
+
+#scene .l3 {
+    margin-left: 181%;
+    margin-top: 100px;
+}
+
+p {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 30px;
 }
